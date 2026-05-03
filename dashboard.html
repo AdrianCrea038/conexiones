@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Efecto Media</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            min-height: 100vh;
+            display: flex;
+        }
+
+        .dashboard-container {
+            display: flex;
+            width: 100%;
+        }
+
+        .dashboard-sidebar {
+            background-color: #0078D4;
+            color: #fff;
+            width: 250px;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+        }
+
+        .dashboard-logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-logo h2 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .dashboard-logo span {
+            color: #00B894;
+        }
+
+        .dashboard-nav ul {
+            list-style: none;
+        }
+
+        .dashboard-nav ul li {
+            margin-bottom: 15px;
+        }
+
+        .dashboard-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 10px;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .dashboard-nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .dashboard-main {
+            margin-left: 250px;
+            padding: 40px;
+            width: calc(100% - 250px);
+        }
+
+        .dashboard-main h1 {
+            color: #0078D4;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .dashboard-content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="dashboard-sidebar">
+            <div class="dashboard-logo">
+                <h2>Efecto<span>Media</span></h2>
+            </div>
+            <nav class="dashboard-nav">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Editar Landing</a></li>
+                    <li><a href="#">Gestionar Proyectos</a></li>
+                    <li><a href="#">Cotizaciones</a></li>
+                    <li><a href="#">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="dashboard-main">
+            <h1>Bienvenido al Dashboard</h1>
+            <div class="dashboard-content">
+                <p>Aquí puedes gestionar el contenido de la landing page, proyectos y cotizaciones.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
